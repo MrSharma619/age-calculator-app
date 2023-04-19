@@ -1,0 +1,50 @@
+.main-div {
+  height: 600px;
+  width: 900px;
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px 20px 200px 20px;
+}
+
+.d-flex, .d-flex2 {
+  display: flex;
+}
+
+.day-div, .month-div, .year-div {
+  padding: 10% 0% 6% 8%;
+  color: hsl(0, 1%, 44%);
+}
+
+.day-span, .month-span, .year-span {
+  font-size: 25px;
+}
+
+.day-input, .month-input, .year-input {
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 12px 20px 12px 20px;
+  width: 150px;
+}
+
+.day-input::placeholder{
+    font-weight: 700;
+}
+
+.hr-cls{
+    border-top: 1px solid hsl(0, 0%, 86%);
+    width: 650px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.circle-purple {
+    background: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 44px;
+    height: 46px;
+    
+}
