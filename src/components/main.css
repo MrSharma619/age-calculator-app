@@ -7,20 +7,39 @@
   border-radius: 20px 20px 200px 20px;
 }
 
-.d-flex, .d-flex2 {
+.d-flex,
+.d-flex2,
+.d-flex3 {
   display: flex;
 }
 
-.day-div, .month-div, .year-div {
-  padding: 10% 0% 6% 8%;
+.day-div {
+  padding: 10% 0% 6% 14%;
   color: hsl(0, 1%, 44%);
 }
 
-.day-span, .month-span, .year-span {
+.month-div,
+.year-div {
+  padding: 10% 0% 6% 5%;
+  color: hsl(0, 1%, 44%);
+}
+
+.day-span,
+.month-span,
+.year-span {
   font-size: 25px;
 }
 
-.day-input, .month-input, .year-input {
+.day-span-error,
+.month-span-error,
+.year-span-error {
+  color: hsl(0, 100%, 67%);
+  font-size: 25px;
+}
+
+.day-input,
+.month-input,
+.year-input {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid hsl(0, 0%, 86%);
@@ -30,21 +49,88 @@
   width: 150px;
 }
 
-.day-input::placeholder{
-    font-weight: 700;
+.day-input:focus,
+.month-input:focus,
+.year-input:focus {
+  margin: 8px 0;
+  display: inline-block;
+  outline: 1px solid hsl(259, 100%, 65%);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 12px 20px 12px 20px;
+  width: 150px;
 }
 
-.hr-cls{
-    border-top: 1px solid hsl(0, 0%, 86%);
-    width: 650px;
-    margin-left: 70px;
-    margin-top: 20px;
+.day-input-error,
+.month-input-error,
+.year-input-error {
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid hsl(0, 100%, 67%);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 12px 20px 12px 20px;
+  width: 150px;
+}
+
+.day-input::placeholder {
+  font-weight: 700;
+}
+
+.hr-cls {
+  border-top: 1px solid hsl(0, 0%, 86%);
+  width: 650px;
+  margin-left: 70px;
+  margin-top: 20px;
 }
 
 .circle-purple {
-    background: hsl(259, 100%, 65%);
-    border-radius: 50%;
-    width: 44px;
-    height: 46px;
-    
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  width: 44px;
+  height: 46px;
+}
+
+.circle-purple:hover {
+  background: black;
+  border-radius: 50%;
+  width: 44px;
+  height: 46px;
+}
+
+.years_val,
+.month_val,
+.days_val {
+  color: hsl(259, 100%, 65%);
+  font-size: 72px;
+  font-weight: 800;
+  margin-left: 150px;
+}
+
+.years_def,
+.month_def,
+.days_def {
+  color: black;
+  font-size: 72px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.btn-sub {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.error-day,
+.error-month,
+.error-year {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  width: 180px;
+  display: block;
 }
